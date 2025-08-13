@@ -34,18 +34,74 @@ export default function Home() {
         </div>
 
         {/* Coffee Cup */}
-        <div>
-          <Image
-            src="/coffee-cup.png"
-            alt="coffee cup"
-            width={288}
-            height={288}
-            
-          />
-        </div>
-      </section>
-      <section className="min-h-screen">
 
+
+    <div className="relative z-10">
+      <Image 
+        className="absolute -top-8 -right-12 blur-[1.5px] z-0"
+        src="/bean-1.png"
+        alt="coffee bean"
+        width={128}
+        height={128}
+      />
+
+      <Image 
+        className="absolute -bottom-8 -left-4 blur-[0px] z-20 rotate-45"
+        src="/bean-1.png"
+        alt="coffee bean"
+        width={100}
+        height={100}
+      />
+
+      <Image 
+        className="absolute top-[50%] -right-4 -rotate-3 blur-[1.2px] z-20"
+        src="/bean-2.png"
+        alt="coffee bean"
+        width={64}
+        height={64}
+      />
+
+      <Image 
+        className="absolute top-0 rotate-32 -left-8 blur-[0px] z-0"
+        src="/bean-2.png"
+        alt="coffee bean"
+        width={82}
+        height={82}
+      />
+
+      <Image
+        className="relative z-10"
+        src="/coffee-cup.png"
+        alt="coffee cup"
+        width={288}
+        height={288}
+      />
+    </div>
+
+      </section>
+      <div className="bg-primary mt-32 py-6 uppercase text-3xl font-bold text-text-secondary text-center"><span className="">20% off your first order</span></div>
+      <section className="min-h-screen mt-32">
+        {/* main container */}
+        <div className="grid rounded-3xl grid-rows-1 grid-cols-2 gap-2 px-12 text-text-primary w-full max-w-[800px] border-primary border-2 mx-auto py-12">
+          {/* left side */}
+          <div className="">
+            <div className="flex gap-4 items-center">
+              <h1 className="text-3xl font-bold">simple coffee</h1>
+              <span className="text-2xl text-text-primary/80 font-medium inline-block text-center self-center">4.3</span>
+            </div>
+              <p className="mt-2 text-xl font-semibold text-text-primary/80">very simple coffee you should defently try, it’s so good you’ll never forget about it!</p>
+              <div className="flex mt-8 gap-8 items-center">
+                <span className="text-3xl font-semibold">9.99$</span>
+                <button className="bg-primary text-text-secondary text-xl py-3 font-medium px-6 rounded-2xl">add to cart</button>
+              </div>
+          </div>
+
+            {/* right side */}
+          <div>dw
+
+          </div>
+
+        </div>
       </section>
     </div>
   );
